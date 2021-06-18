@@ -11,10 +11,10 @@ export default function Navmenu() {
     }
     return (
         <>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-        <div class="container">
+        <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div className="container">
             <Link to='/'>
-                <div class="navbar-brand brand-icon" >Retool</div>
+                <div className="navbar-brand brand-icon" >Retool</div>
             </Link>
             <div className="navbar-toggler border-0 ">
             <HamburgerMenu
@@ -31,13 +31,13 @@ export default function Navmenu() {
 
             </div>
      
-        <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+        <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav ms-auto">
     
-        <li class="nav-item me-3">
+        <li className="nav-item me-3">
         <button className='btn btn-link border-0'>Sign In</button>
         </li>
-        <li class="nav-item">
+        <li className="nav-item">
         <button className='btn btn-primary px-3'>Sign Up</button>
         </li>
         
@@ -51,20 +51,16 @@ export default function Navmenu() {
         {
             isMenuOpen && (
                 <div className='menu-container'>
-
-        
                 <br/>
                 <br/>
                 <br/>
-          
-              
                 <div className='custom-menu'>
                     <ul className='menu-navs'>
-                    <li><a href=''>Customers</a></li>
-                    <li><a href=''>Integartions</a></li>
-                    <li><a href=''>Templates</a></li>
-                    <li><a href=''>Pricing</a></li>
-                    <li><a href=''>Docs</a></li>
+                    <li><a href='/#customer'>Customers</a></li>
+                    <li><a href='/#integration'>Integartions</a></li>
+                    <li><a href='/#templates'>Templates</a></li>
+                    <li><a href='/#pricing'>Pricing</a></li>
+                    <li><a href='/#docs'>Docs</a></li>
                     </ul>
         
                     <br/>

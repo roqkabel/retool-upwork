@@ -2,7 +2,11 @@ import React,{useState} from "react"
 import Layout from '../components/Layout'
 import {AiFillPlayCircle} from 'react-icons/ai'
 import {IoMdArrowRoundForward} from 'react-icons/io'
-import ModalVideo from 'react-modal-video'
+// import ModalVideo from 'react-modal-video'
+import Loadable from "@loadable/component"
+
+const ModalVideo = Loadable(() => import('react-modal-video'))
+
 
 // markup
 const IndexPage = () => {
@@ -25,13 +29,13 @@ const toggleModal = () => {
 
 
         <div className='watch-button'>
-          <div class="d-flex align-items-center ">
-            <div class="flex-shrink-0">
+          <div className="d-flex align-items-center ">
+            <div className="flex-shrink-0">
               <div>
                 <AiFillPlayCircle className='watch-button-icon' size={40} />
               </div>
             </div>
-            <div class="flex-grow-1 ms-3">
+            <div className="flex-grow-1 ms-3">
               <div className='watch-button-text' tabIndex={0} role='button' onKeyDown={() => toggleModal()} onClick={() => toggleModal()}>
                 <div className='text-left watch-button-title'>Watch Demo</div>
                 <div className=' text-left watch-button-meta'>4 min</div>
@@ -48,7 +52,7 @@ const toggleModal = () => {
 
     {/* VIDEO SECTION */}
     <div className='container'>
-      <div className='video-banner' tabIndex={1} role='button' onKeyDown={() => toggleModal()} onClick={() => toggleModal()}>
+      <div className='video-banner' tabIndex={-1} role='button' onKeyDown={() => toggleModal()} onClick={() => toggleModal()}>
       <img className='w-100' alt='video-back-drop' src='https://retool.com/static/25197658a6b942da270199b5344a6bd8/f4f38/retool-editor-screenshot.webp' />
         <div className='video-icon'>
             <AiFillPlayCircle className='video-icon-btn' />
