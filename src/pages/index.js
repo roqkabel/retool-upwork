@@ -61,7 +61,7 @@ const toggleModal = () => {
     </div>
 
     {/* MODAL */}
-    <ModalVideo  channel='youtube' autoplay isOpen={isopen} videoId="6YhqQ2ZW1sc"  onClose={() => toggleModal()} />
+    <ModalVideo  channel='youtube' autoplay isOpen={isopen} videoId="3jmFux7fp2U"  onClose={() => toggleModal()} />
 
   </div>
  </Layout>
