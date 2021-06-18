@@ -1,0 +1,28 @@
+// customize bootstrap
+
+.btn-primary {
+    color: #fff;
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+    &:hover{
+        background-color: black !important;
+        border-color: black !important;
+    }
+ 
+}
+
+.btn{
+    box-shadow: none !important;
+    font-weight: 500 !important;
+
+}
+
+.btn-link{
+    color: $primary-color !important;
+    text-decoration: none !important;
+    &:hover{
+        color: black !important;
+    }
+
+}
+
